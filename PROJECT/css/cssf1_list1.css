@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e1e1e;
+}
+
+::selection {
+    background-color: #e95d2c;
+    color: #d9d9d9;
+}
+.nav_li_title
+{
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.nav_li
+{
+    color: #e95d2c;
+    text-decoration: none;
+}
+.section_list_a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .dark {
+        background-color: #e95d2c;
+    }
+
+    .section_about {
+        width: 1250px;
+        height: 600px;
+        margin: 0 auto;
+        background: #143041;
+        background-image: url("../img/bg_list2.png");
+        background-repeat: no-repeat;
+        background-position: left;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .block_color {
+        width: 260px;
+        height: 600px;
+        background: #1a2730;
+        border-left: 2px solid #d9d9d9;
+    }
+
+    .block_container {
+        width: 990px;
+        height: 600px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+    }
+
+    .block_text {
+        height: 560px;
+        width: 950px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .p_title {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: "Solway", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #d9d9d9;
+        text-align: center;
+        height: 86px;
+        width: 685px;
+    }
+
+    b {
+        color: #e95d2c;
+    }
+
+    .block_main_text {
+        width: 950px;
+        height: 400px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .p_cyata {
+        width: 228px;
+        height: 56px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #e95d2c;
+    }
+
+    .p_text {
+        width: 500px;
+        height: 480px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+        font-size: 15px;
+    }
+
+    .img_f1 {
+        margin-right: 100px;
+        width: 250px;
+        height: 380px;
+    }
+}

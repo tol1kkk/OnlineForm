@@ -1,0 +1,964 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1e1e1e;
+}
+
+::selection {
+    background-color: #e95d2c;
+    color: #d9d9d9;
+}
+
+.nav_li_title {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.nav_li {
+    color: #e95d2c;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+b {
+    color: #e95d2c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .dark {
+        background-color: #e95d2c;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    /* HEADER */
+
+    .header {
+        width: 1250px;
+        height: 775px;
+        background: #143041;
+        background-image: url("../img/header_bg.png");
+        background-repeat: no-repeat;
+        background-position: right;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .block_design {
+        width: 400px;
+        height: 360px;
+        background: #143041;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .h1_title {
+        font-size: 27px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .img_logo_header {
+        margin-bottom: 30px;
+    }
+
+    .container_nav_title_header {
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .navigation {
+        width: 850px;
+        height: 100px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .ul_navigation {
+        width: 600px;
+        height: 100px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .li_ul_header {
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #e95d2c;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .li_ul_header:hover {
+        font-size: 25px;
+    }
+
+    .block_small_detail_header {
+        width: 260px;
+        height: 315px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .p_cytata {
+        width: 200px;
+        height: 100px;
+
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .block_line {
+        height: 80px;
+        width: 0;
+        border: 1px solid #d9d9d9;
+    }
+
+    .block_link_header {
+        height: 75px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .block_title_header {
+        width: 600px;
+        height: 290px;
+        margin-right: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .p_title_header {
+        height: 76px;
+        width: 610px;
+
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Solway", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #d9d9d9;
+        text-align: end;
+    }
+
+    .p_text_header {
+        height: 100px;
+        width: 610px;
+
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "Solway", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #d9d9d9;
+        text-align: end;
+    }
+
+    .button_header {
+        width: 150px;
+        height: 40px;
+        background: #e95d2c;
+        border: none;
+        border-radius: 40px 40px 40px 40px;
+        cursor: pointer;
+
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #d9d9d9;
+    }
+
+    .container_heart {
+        height: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .heart {
+        background: transparent;
+        background-image: url("../img/heart.png");
+        background-size: cover;
+        opacity: 0.7;
+        width: 25px;
+        height: 25px;
+        border: none;
+    }
+
+    .heart.added {
+        background-image: url("../img/heart_added.png");
+    }
+
+    .likes-number {
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+    /* SECTION ABOUT */
+
+    .section_about {
+        width: 1250px;
+        height: 600px;
+        margin: 0 auto;
+        background: #143041;
+        background-image: url("../img/bg_about.png");
+        background-repeat: no-repeat;
+        background-position: left;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .block_color {
+        width: 260px;
+        height: 600px;
+        background: #1a2730;
+        border-left: 2px solid #d9d9d9;
+    }
+
+    .block_container {
+        width: 990px;
+        height: 600px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .block_text {
+        height: 500px;
+        width: 750px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .p_title {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: "Solway", serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .block_main_text {
+        width: 750px;
+        height: 400px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block_container_text {
+        height: 290px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .p_cyata {
+        width: 228px;
+        height: 56px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #e95d2c;
+    }
+
+    .p_text {
+        width: 270px;
+        height: 230px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .img_f1 {
+        margin-right: 100px;
+    }
+
+    /* SECTION LIST */
+
+    .section_list {
+        width: 1250px;
+        height: 600px;
+        background: #1a2730;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block_image1,
+    .block_image2,
+    .block_image3 {
+        width: 416px;
+        height: 600px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .block_image1 {
+        background-image: url(../img/list1.png);
+    }
+
+    .block_image2 {
+        background-image: url(../img/list2.png);
+    }
+
+    .block_image3 {
+        background-image: url(../img/list3.png);
+    }
+
+    .p_title_image1,
+    .p_title_image2,
+    .p_title_image3 {
+        width: 350px;
+        height: 270px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        color: #1e1e1e;
+    }
+
+    .p_title_image2 {
+        color: #d9d9d9;
+    }
+
+    .p_title_image3 {
+        color: #e95d2c;
+    }
+
+    .section_list_a {
+        text-decoration: none;
+    }
+
+    /* SECTION FEEL */
+
+    .section_feel {
+        width: 1250px;
+        height: 936px;
+        background: #1a2730;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .block_main_text_feel {
+        height: 460px;
+        width: 900px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_text_feel {
+        height: 460px;
+        width: 560px;
+    }
+
+    .container_image_feel {
+        height: 460px;
+        width: 312px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .button_feel {
+        width: 150px;
+        height: 40px;
+        background: #e95d2c;
+        border: none;
+        border-radius: 40px 40px 40px 40px;
+        cursor: pointer;
+
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #d9d9d9;
+    }
+
+    .p_title_feel {
+        width: 499px;
+        height: 56px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: #d9d9d9;
+
+        margin-bottom: 20px;
+    }
+
+    .p_main_text {
+        width: 500px;
+        height: 336px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #d9d9d9;
+        line-height: 30px;
+    }
+
+    .block_image_bg {
+        width: 300px;
+        height: 460px;
+
+        background-image: url(../img/bg_feel.png);
+    }
+
+    /*FOOTER */
+
+    .footer {
+        width: 1250px;
+        height: 150px;
+        background: #143041;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_footer_title {
+        width: 260px;
+        height: 150px;
+        background: #1a2730;
+
+        justify-content: flex-end;
+    }
+
+    .container_footer_another {
+        width: 990px;
+        height: 150px;
+
+        justify-content: center;
+    }
+
+    .block_help_footer {
+        height: 150px;
+        width: 500px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .p_title_footer {
+        font-size: 27px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .container_footer_title,
+    .container_footer_another {
+        display: flex;
+        align-items: center;
+    }
+
+    .p_copyright {
+        font-size: 15px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .block_detail_footer {
+        width: 80px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* #################################################### */
+
+    /* COOKIE */
+
+    .cookies-agreement {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #e95d2c;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .p_cookies-agreement {
+        font-size: 16px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .cookies-agreement {
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+
+        bottom: 0;
+        padding: 10px 20px 20px;
+    }
+
+    .cookies-agreement .button {
+        margin-left: auto;
+    }
+
+    .cookies-agreement-closed {
+        display: none;
+    }
+
+    .button {
+        width: 150px;
+        height: 40px;
+        background: #143041;
+        border: none;
+        border-radius: 40px 40px 40px 40px;
+        cursor: pointer;
+
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #d9d9d9;
+    }
+
+    .cookies-agreement-closed {
+        display: none;
+    }
+
+    /* .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+    } */
+
+    /* #################################################### */
+
+    /* КНОПКА */
+
+    .upBottom {
+        position: fixed;
+        top: 700px;
+        left: 150px;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .upBottom.shown {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* #################################################### */
+
+    .comment-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .comment-field {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .comment-field:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    .submit-button {
+        width: 150px;
+        height: 40px;
+        background: #e95d2c;
+        border: none;
+        border-radius: 40px 40px 40px 40px;
+        cursor: pointer;
+        align-self: flex-end;
+
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #d9d9d9;
+    }
+
+    .submit-button:hover {
+        background-color: #d9d9d9;
+        color: #e95d2c;
+    }
+
+    .comment-list {
+        width: 1050px;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .user-comment {
+        background: #e95d2c;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        font-size: 15px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .dark {
+        background-color: #e95d2c;
+    }
+
+    /* HEADER */
+
+    .header {
+        width: 100%;
+        height: 350px;
+        background: #143041;
+        background-image: url("../img/header_bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_header {
+        height: 350px;
+        background: #143041;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .block_design {
+        width: 100px;
+        height: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1_title {
+        font-size: 15px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+    }
+
+    .img_logo_header {
+        display: none;
+    }
+
+    .navigation {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #fff;
+        position: relative;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+
+    .ul_navigation {
+        width: 200px;
+        height: 100px;
+
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transform: scale(0.8);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .nav_li {
+        color: #d9d9d9;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .active {
+        height: 200px;
+        width: 150px;
+        position: absolute;
+        top: 100px;
+        /* left: -10px; */
+        transform: translate(-50%, -50%) scale(1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #e95d2c;
+        border-radius: 0px 0px 50px 50px;
+    }
+
+    .li_ul_header {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .li_ul_header {
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .burger-menu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    .rotate {
+        transform: rotate(90deg);
+    }
+
+    .block_small_detail_header {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .p_cytata {
+        width: 100px;
+        height: 100px;
+
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #d9d9d9;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .block_line {
+        width: 80px;
+        height: 0;
+        border: 1px solid #d9d9d9;
+    }
+
+    .block_link_header {
+        height: 75px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* .block_title_header {
+    width: 600px;
+    height: 250px;
+
+    margin-bottom: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .p_title_header {
+    height: 76px;
+    width: 610px;
+
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Solway", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #d9d9d9;
+    text-align: end;
+  }
+
+  .p_text_header {
+    height: 100px;
+    width: 610px;
+
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Solway", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #d9d9d9;
+    text-align: end;
+  }
+
+  .button_header {
+    width: 150px;
+    height: 40px;
+    background: #e95d2c;
+    border: none;
+    border-radius: 40px 40px 40px 40px;
+    cursor: pointer;
+
+    font-family: "Braah One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #d9d9d9;
+  } */
+
+    /* SECTION LIST */
+
+    .section_list {
+        width: 100%;
+        height: 1800px;
+        background: #1a2730;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block_image1,
+    .block_image2,
+    .block_image3 {
+        width: 767px;
+        height: 600px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        background-repeat: no-repeat;
+    }
+
+    .block_image1 {
+        background-image: url(../img/list1.png);
+    }
+
+    .block_image2 {
+        background-image: url(../img/list2.png);
+    }
+
+    .block_image3 {
+        background-image: url(../img/list3.png);
+    }
+
+    .p_title_image1,
+    .p_title_image2,
+    .p_title_image3 {
+        width: 100%;
+        height: 270px;
+        font-family: "Braah One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #1e1e1e;
+    }
+
+    .p_title_image2 {
+        color: #d9d9d9;
+    }
+
+    .p_title_image3 {
+        color: #e95d2c;
+    }
+
+    .section_list_a {
+        text-decoration: none;
+    }
+}
